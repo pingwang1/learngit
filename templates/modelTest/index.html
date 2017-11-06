@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {{ content.name }}
+    {{ content.age }}
+    {{ content.sex }}
+    {{ content.show }}
+<hr>
+    {% for item in testList reversed%}
+        {{ item }}<hr>
+    {% endfor %}
+<hr>
+    {{ dt }}<hr>
+{#    过滤器自带的格式化时间的方法#}
+    {{ dt |date:'Y-m-d H-i-s' }}
+    {% load percent %}
+{#使用自定义的过滤器#}
+</body>
+</html>
